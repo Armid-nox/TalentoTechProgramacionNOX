@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Details Dashboard</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+
+                <li><a href="#" id="contact-toggle">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <h1 id="energy-title">Energy Details Dashboard</h1>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="energy-container">
+        <aside id="topic-list">
+            <h2>Energy Sources</h2>
+            <ul>
+                <li data-topic="solar">Solar Energy</li>
+                <li data-topic="wind">Wind Energy</li>
+                <li data-topic="hydro">Hydroelectric Energy</li>
+            </ul>
+        </aside>
+
+        <section id="topic-content">
+            <p>Select a topic from the list to see details here.</p>
+        </section>          
+    </main>
+
+    <!-- Energy Calculation Section -->
+    <!-- Formulario de Estimación de Energía Renovable -->
+    <section id="form-section">
+        <h2>Estimate Renewable Energy Contribution</h2>
+        <form id="energyForm">
+            <label  for="totalConsumption" >Total Electricity Consumption (kWh):</label>
+            <input type="number" id="totalConsumption" min="1" placeholder="Enter your consumption" required />
+            <button type="submit" class="calculate-botton">Calculate</button>
+        </form>
+        <div id="result">
+            <p id="renewablePercentage">Your renewable energy percentage will appear here.</p>
+        </div>
+        
+    </section>
+
+    <!-- Dashboard con Gráficos -->
+    <section id="dashboard">
+        <h2>Energy Dashboard</h2>
+        <div class="chart-container">
+            <!-- Gráfico de Barras -->
+            <div id="barChartContainer">
+                <h3>Renewable Energy Production by Source</h3>
+                <canvas id="barChart" width="400" height="400"></canvas>
+            </div>
+            <!-- Gráfico de Torta -->
+            <div id="pieChartContainer">
+                <h3>Renewable Energy Participation</h3>
+                <canvas id="pieChart" width="400" height="400"></canvas>
+            </div>
+            <!-- Gráfico de Líneas -->
+            <div id="lineChartContainer">
+                <h3>Installed Capacity Trend</h3>
+                <canvas id="lineChart" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <button><a href="index.html" class="back-button">Back to Home</a></button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

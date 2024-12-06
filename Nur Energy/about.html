@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUR Clean Energy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#" id="services-btn">MISSION & VISION</a></li>
+            <li><a href="#" id="contact-toggle">CONTACTS US</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección principal (Hero) -->
+    <section class="hero">
+        <img src="imagenes/renewable-energy.jpg" alt="Turbinas" class="hero-img">
+        <div class="hero-content">
+            <h2>ABOUT</h2>
+            <div class="buttons">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de la historia -->
+    <section class="history-section">
+        <div class="history-header">
+            <h3>The Role of Renewable Energy in Combating Climate Change</h3>
+            <p class="subtitle">Renewable energy is critical to combatting climate change and global warming. The use of clean energy and renewable energy resources—such as solar, wind and hydropower—originates in early human history; how the world has harnessed power from these resources to meet its energy needs has evolved over time.</p>
+        </div>
+        <div class="history-content">
+            <div class="history-text left">
+                <p>
+                    - Renewable energy is key to combating climate change and global warming, as it significantly reduces greenhouse gas emissions.<br><br> Energy sources such as solar, wind, and hydropower utilize inexhaustible natural resources that do not pollute the environment. Since ancient times, humanity has used basic forms of these resources, such as windmills and water-based irrigation systems.<br><br> With advancements in technology, more efficient systems have been developed, like solar panels that convert sunlight into electricity and wind turbines that generate power from wind.<br><br> We can help make a better world.
+                </p>
+            </div>
+            <div class="history-text right">
+                <p>
+                    - Renewable energy technologies are transforming the way we utilize natural resources to generate clean power.<br><br> Solar panels now include advanced photovoltaic cells that convert sunlight into electricity more efficiently than ever before.<br><br> Wind turbines have also evolved, with larger blades and improved designs to capture energy even in low-wind conditions.<br><br> Hydropower systems, including small-scale setups, provide renewable energy to communities with minimal environmental impact. 
+                </p>
+            </div>
+        </div>
+        <div class="image-footer">
+            <img src="imagenes/paisaje 2.jpg" alt="show image">
+        </div>
+    </section>
+
+    <!-- Sección para contacto -->
+    <section class="contact hidden-modal" id="contact-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <form id="contact-form" action="https://formspree.io/f/myemail" method="POST">
+                <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="pepitoperrez@" required><br>
+
+                    <label for="how-did-you-hear">How did you know about us?</label>
+                    
+                    <select id="how-did-you-hear" name="how-did-you-hear" required><br>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Amigo">Friend</option>
+                        <option value="Redes Sociales">Social networks</option>
+                        <option value="Otro">Other</option><br><br>
+                    </select>
+
+                    <label for="message">How can we help you?</label><br><br><br>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+    </section>
+
+    <!-- Modo Misión y Visión -->
+    <div class="modo hidden" id="modo-mision-vision">
+        <div class="modo-content">
+            <span class="close-button">&times;</span>
+            <h2>Mission</h2>
+            <p>
+                Our mission is to provide accessible and accurate information on renewable energy sources such as wind, hydro, and solar power, in order to educate the community about their importance, benefits, and the positive impact they can have in the fight against climate change.
+            </p>
+            <h2>Vision</h2>
+            <p>
+                To be a reliable and leading source of information on renewable energy by 2030, helping to raise public awareness and promote the adoption of sustainable practices that contribute to a greener and healthier future for all.
+            </p>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <!-- Primer bloque azul -->
+        <section class="footer-top">
+            <h2>Harvest the wind, water & sun for your energy needs</h2>
+            <p>The energy from wind, water, and sun is within everyone’s reach. Harnessing these renewable resources is key to a sustainable future. By generating clean energy, we reduce pollution and protect our planet. Every step toward using these sources helps fight climate change. Make a difference today and choose the path of responsible energy!</p>
+            <button class="footer-button">Photo</button>
+        </section>
+
+        <div class="carousel-container" id="carousel-container">
+            <button class="close-carousel-button" id="close-carousel">&times;</button>
+            <div class="carousel">
+                <button class="carousel-button left" id="prev">&#10094;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="carousel-slide"><img src="imagenes/foto1.jpg" alt="Energía solar"></li>
+                        <li class="carousel-slide"><img src="imagenes/foto2.jpg" alt="Energía eólica"></li>
+                        <li class="carousel-slide"><img src="imagenes/foto3.jpg" alt="Energía hidráulica"></li>
+                        <li class="carousel-slide"><img src="imagenes/foto4.jpg" alt="Energía hidráulica"></li>
+                        <li class="carousel-slide"><img src="imagenes/foto5.jpg" alt="Energía hidráulica"></li>
+                        <li class="carousel-slide"><img src="imagenes/foto6.jpg" alt="Energía hidráulica"></li>
+                    </ul>
+                </div>
+                <button class="carousel-button right" id="next">&#10095;</button>
+            </div>
+        </div>
+        
+    
+        <!-- Segundo bloque blanco -->
+        <section class="footer-middle">
+            <div class="footer-container">
+                <!-- Logo y descripción -->
+                <div class="footer-section about">
+                    <h3>Renewable Tech Energies</h3>
+                    <p>
+                        Harvest the wind, water & sun for your energy needs.
+                        Save your future and that of future generations.
+                    </p>
+                </div>
+    
+                <!-- Dirección -->
+                <div class="footer-section about">
+                    <h3>Address</h3>
+                    <p>Robledo, Medellín, Antioquia</p>
+                    <p>Phone: +57(604) 444 3700</p>
+                    <p>Email: info@renewabletech.com</p>
+                </div>
+    
+                <!-- Enlaces adicionales -->
+                <div class="footer-section links">
+                    <h3>Extra Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#" id="contact-toggle">CONTACTS</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Noticias recientes -->
+                <div class="footer-section news">
+                    <h3>Recent News</h3>
+                    <ul>
+                        <li><a href="#">Solar Energy Breakthrough</a> - October 5, 2023</li>
+                        <li><a href="#">New Research on Wind Energy</a> - September 22, 2023</li>
+                        <li><a href="#">Building the Future with Renewable Tech Energies</a> - November 21, 2024</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Tercer bloque azul -->
+        <section class="footer-bottom">
+            <p>&copy; 2024 Renewable Tech Energies | All rights reserved</p>
+            <div class="footer-bottom-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

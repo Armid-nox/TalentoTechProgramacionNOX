@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUR Clean Energy</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/logo.png" alt="Renewable Tech Energies" class="logo-img">
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="#" id="contact-toggle">CONTACTS US</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección principal (Hero) -->
+    <section class="hero">
+        <img src="imagenes/imagen principal.jpg" alt="Turbinas" class="hero-img">
+        <div class="hero-content">
+            <h2>Let's Make The Planet Cleaner</h2>
+            <p>We can change the world.</p>
+            <div class="buttons">
+                <button>SEE OUR SERVICES</button>
+                <button>CONTACT US</button>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección para contacto -->
+    <section class="contact hidden-modal" id="contact-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <form id="contact-form" action="https://formspree.io/f/myemail" method="POST">
+                <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="pepitoperrez@" required><br>
+
+                    <label for="how-did-you-hear">How did you know about us?</label>
+                    
+                    <select id="how-did-you-hear" name="how-did-you-hear" required><br>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Amigo">Friend</option>
+                        <option value="Redes Sociales">Social networks</option>
+                        <option value="Otro">Other</option><br><br>
+                    </select>
+
+                    <label for="message">How can we help you?</label><br><br><br>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+    </section>
+    <script src="script.js"></script>
+
+    <!-- Sección de galería -->
+    <section class="gallery" id="gallery">
+        <h3>Renewable Tech Energies</h3><br>
+        <p>“Renewable energies” are those energy sources based on the use of the sun, wind, water or plant or animal biomass - among others.</p>
+        
+        <div class="project-section">
+
+             <div class="project-item">
+            <img src="imagenes/hidraulica.jpeg" alt="Hidráulica">
+            <h4>Hydro</h4>
+            <button> <a href="energy-details.html?energy=hidraulica" class="info-button"> More info.</a></button>
+        </div>
+
+        <div class="project-item">
+            <img src="imagenes/solar.jpeg" alt="Solar">
+            <h4>Solar</h4>
+            <button> <a href="energy-details.html?energy=solar" class="info-button">More info.</a></button>
+        </div>
+
+        <div class="project-item">
+            <img src="imagenes/eolica2.jpg" alt="Eolica">
+            <h4>Wind</h4>
+            <button> <a href="energy-details.html?energy=eolica" class="info-button">More info.</a></button>
+        </div>
+    </div>
+    </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="follow">
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-ins">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <p>Robledo, Medellín, Antioquia</p>|
+        <p>Mon-Fri: 6:00-22:00 | Sunday: Closed</p>|
+        <p>+57 (604) 4443700</p>|
+        <p>2024 All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
